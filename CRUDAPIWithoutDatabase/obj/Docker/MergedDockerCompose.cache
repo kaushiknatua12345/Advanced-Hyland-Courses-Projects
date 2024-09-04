@@ -1,0 +1,12 @@
+services:
+  crudapiwithoutdatabase:
+    build:
+      context: C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase
+      dockerfile: CRUDAPIWithoutDatabase/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: '8080'
+    image: crudapiwithoutdatabase
+    ports:
+    - target: 8080
+version: '3.4'

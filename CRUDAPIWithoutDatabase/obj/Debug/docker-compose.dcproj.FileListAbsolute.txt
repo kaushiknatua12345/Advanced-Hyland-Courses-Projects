@@ -1,0 +1,14 @@
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\CRUDAPIWithoutDatabase.deps.json
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\CRUDAPIWithoutDatabase.runtimeconfig.json
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\appsettings.Development.json
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\appsettings.json
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\CRUDAPIWithoutDatabase.exe
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\CRUDAPIWithoutDatabase.dll
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\Microsoft.OpenApi.dll
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\bin\Debug\CRUDAPIWithoutDatabase.pdb
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\obj\Debug\docker-c.35A3FFBA.Up2Date

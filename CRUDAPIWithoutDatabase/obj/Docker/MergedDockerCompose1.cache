@@ -1,0 +1,42 @@
+services:
+  crudapiwithoutdatabase:
+    build:
+      args:
+        BUILD_CONFIGURATION: Debug
+      context: C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase
+      dockerfile: CRUDAPIWithoutDatabase/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: CRUDAPIWithoutDatabase
+      target: base
+    container_name: CRUDAPIWithoutDatabase
+    entrypoint: dotnet --roll-forward Major /VSTools/DistrolessHelper/DistrolessHelper.dll
+      --wait
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: '8080'
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: ''
+    image: crudapiwithoutdatabase:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /.nuget/packages  "/app/bin/Debug/net8.0/CRUDAPIWithoutDatabase.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: dotnet --roll-forward Major
+        /VSTools/DistrolessHelper/DistrolessHelper.dll --stop dotnet
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - target: 8080
+    tty: true
+    volumes:
+    - C:\Users\knatua\.nuget\packages:/.nuget/packages:ro
+    - C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\HotReload:/HotReloadAgent:ro
+    - C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Sdks\Microsoft.Docker.Sdk\tools\linux-x64\net8.0:/VSTools:ro
+    - C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase\CRUDAPIWithoutDatabase:/app:rw
+    - C:\Users\knatua\AppData\Roaming\ASP.NET\Https:/home/app/.aspnet/https:ro
+    - C:\Users\knatua\AppData\Roaming\Microsoft\UserSecrets:/home/app/.microsoft/usersecrets:ro
+    - C:\Users\knatua\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\knatua\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\knatua\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Users\knatua\source\repos\CRUDAPIWithoutDatabase:/src:rw
+version: '3.4'

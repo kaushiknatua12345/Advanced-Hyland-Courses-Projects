@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "W60s0PVkUs8fTdkqZ4lNPBNtdBUfbOk2TW06QbM2iyc=",
+  "Source": "CRUDAPIWithoutDatabase",
+  "BasePath": "_content/CRUDAPIWithoutDatabase",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
