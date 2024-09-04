@@ -1,0 +1,29 @@
+<div style="margin-left: 200px;">
+
+    <form #loginForm="ngForm" (ngSubmit)="OnSubmit()">
+        <div>
+            <input placeholder="username" name="username" [(ngModel)]="loginObj.username" required #name="ngModel" [pattern]="emailPattern" id="username"/>
+            <div id="usernameErrors" *ngIf="name.invalid && (name.touched || name.dirty)">
+                <span *ngIf="name.errors?.['required']" style="color: red;">This field required</span>
+                <span *ngIf="name.errors?.['pattern']" style="color: red;">Please enter a valid email pattern</span>
+    
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <input placeholder="password" name="password" [(ngModel)]="loginObj.password" required #password="ngModel" [pattern]="passwordPattern" id="password"/>
+            <div id="passwordErrors" *ngIf="password.invalid && (password.touched || password.dirty)">
+                <span *ngIf="password.errors?.['required']" style="color: red;">This field required</span>
+                <span *ngIf="password.errors?.['pattern']" style="color: red;">This field should have min of 5 char and 1 alphabet, 1 numeric and atleast 1 special char</span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button id="submitButton" type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>
+
+</div>
+
+
+
